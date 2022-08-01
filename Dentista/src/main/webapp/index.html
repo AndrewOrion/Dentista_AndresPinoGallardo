@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Cita Dentista</title>
+</head>
+<body>
+    <h1>Cita Dentista</h1>
+    <form action="cita" method="post">
+        <div>
+            <label for="fecha">Día de la cita:</label>
+            <input type="date" name="fecha" id="fecha">
+        </div>
+        <div>
+            <label for="hora">Hora de la cita:</label>
+            <input type="time" name="hora" id="hora">
+        </div>
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Introduce nombre...">
+        </div>
+        <div>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" name="apellidos" id="apellidos" placeholder="Introduce apellidos...">
+        </div>
+        <div>
+            <label for="centro">Centro:</label>
+            <select name="centro" id="centro">
+                <option value="1">Centro dental Colón</option>
+                <option value="2">Centro prótesis dental Guerrita</option>
+                <option value="3">Centro estomatología Fidiana</option>
+                <option value="4">Centro implantología Sector Sur</option>
+            </select>
+        </div>
+        <div>
+            <label for="tipo">Tipo:</label>
+            <input type="radio" name="tipo" id="nueva" value="nueva">
+            <label class="tipo" for="nueva">Nueva cita:</label>
+            <input type="radio" name="tipo" id="revision" value="revision">
+            <label class="tipo" for="revision">Revisión:</label>
+        </div>
+        <div>
+            <input class="boton" type="submit" value="Confirmar">
+        </div>
+    </form>
+</body>
+</html>
